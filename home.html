@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-135734654-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-135734654-1');
+</script>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Game</title>
+<style>
+body{
+	font-size: 17px;
+	font-family: "Comic Sans MS";
+	background-color: #999;
+	margin: 0;
+	width: 100%;
+}
+div {
+  background-color: #FFF;
+  margin: 0;
+  padding: 0;
+}
+.header{
+	height: 70px;
+	max-height: 70px;
+	margin-top: 0;
+	padding-top:10px;
+	padding-left: 10px;
+	background-color: #000;
+	position: relative;
+}
+h1{
+	margin: 0;
+	color: #FFF;
+}
+.navigation{
+	height: 60px;
+	max-height: 60px;
+	background-color: #CCC;
+}
+ul{
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+}
+li{
+	float: left;
+}
+li a{
+	display: block;
+	color: #00F;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li a:hover{
+	background-color:#111;
+	color: #06F;
+}
+.active {
+	background-color: #474747;
+}
+
+.mySlides {display: none;}
+img {
+	width:100%;
+	height:550px;}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+</style>
+</head>
+
+<body>
+<div class="header">
+	<h1>KM information</h1>
+</div>
+<div class="navigation">
+    <ul>
+        <li><a class="active" href="home.html">Home</a></li>
+        <li><a href="Apex Legend.html">Apex Legend</a></li>
+        <li><a href="MHW.html">Monster Hunter World</a></li>
+        <li><a href="PUBG.html">PUBG</a></li>
+        <li><a href="About Us.html">About Us</a></li>
+    </ul>
+</div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  	<img src="New folder/apex legend.jpeg" alt="Apex Legend">
+</div>
+
+<div class="mySlides fade">
+	<img src="New folder/monster hunter world.jpg" alt="Monster Hunter World" >
+</div>
+
+<div class="mySlides fade">
+  	 <img src="New folder/pubg.jpg" alt="PUBG" /> 
+
+</div>
+
+</div>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+</script>	
+</body>
+</html>
